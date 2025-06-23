@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "AI Interview Assistant",
+  "version": "1.0",
+  "description": "Listens to Google Meet subtitles and gives smart responses.",
+  "permissions": ["scripting", "activeTab"],
+  "host_permissions": ["*://meet.google.com/*"],
+  "action": {
+    "default_popup": "index.html",
+    "default_icon": {
+      "16": "icon.svg"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://meet.google.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["overlay.css"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}
