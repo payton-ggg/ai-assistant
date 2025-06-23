@@ -14,7 +14,7 @@
   "content_scripts": [
     {
       "matches": ["*://meet.google.com/*"],
-      "js": ["/assets/index-B9BWGZ_x.js"],
+      "js": ["/assets/index-apxjO98A.js"],
       "run_at": "document_idle"
     }
   ],

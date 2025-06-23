@@ -30,7 +30,7 @@ export const Overlay = () => {
         padding: "12px",
         borderRadius: "8px",
         zIndex: 9999,
-        maxWidth: "300px",
+        maxWidth: "500px",
         fontSize: "14px",
       }}
     >
